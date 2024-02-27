@@ -1,0 +1,30 @@
+version: "3.5"
+
+services:
+  db:
+    image: postgres:latest
+    hostname: db
+    environment:
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_USER=admin
+      - POSTGRES_DB=rinha
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./script.sql:/docker-entrypoint-initdb.d/script.sql
+    deploy:
+      resources:
+        limits:
+          cpus: "0.13"
+          memory: "140MB"
+  api01: &api
+    build: .
+    container_name: api_rinha2024
+    ports:
+      - 8081:8081
+    volumes:
+      - .:/user/app
+    links:
+      - db
+    depends_on:
+      - db
