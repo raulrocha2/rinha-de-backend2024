@@ -1,3 +1,5 @@
+# Para rodar este projeto, use o docker-compose up -d e rode o script dentro da pasta sql para inserir os usuários e valores no banco de dados.
+
 # Rinha de Backend - 2024/Q1
 
 A Rinha de Backend é um desafio que tem como principal objetivo compartilhar conhecimento em formato de desafio! Esta é a segunda edição. A data limite para enviar sua submissão é `2024-03-10T23:59:59-03:00` e em `2024-03-14T19:00:00-03:00` os resultados serão anunciados [numa live](https://www.youtube.com/watch?v=2OonGBGcl5k) no YouTube.
