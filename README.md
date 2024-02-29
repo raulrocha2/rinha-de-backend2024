@@ -1,4 +1,5 @@
-# Para rodar este projeto, use o docker-compose up -d e rode o script dentro da pasta sql para inserir os usuários e valores no banco de dados.
+Para rodar este projeto, use o **docker-compose up** 
+e rode o script dentro da pasta sql para inserir os usuários e valores no banco de dados.
 
 # Rinha de Backend - 2024/Q1
 
