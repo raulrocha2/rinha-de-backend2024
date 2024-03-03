@@ -13,6 +13,6 @@
     "typeorm": "^0.3.20"
   },
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon api/index.js"
   }
 }
